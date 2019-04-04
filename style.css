@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  /*background: linear-gradient(90deg, rgba(248, 188, 79, 1) 5.008073196986006%, rgba(211, 21, 87, 1) 97.68837459634014%);*/
+  /*background: linear-gradient(90deg, rgba(157, 73, 242,1) 19.625%,rgba(156, 72, 241,1) 19.625%,rgba(16, 0, 237,1) 79.625%);*/
+  background: linear-gradient(90deg, rgba(97, 116, 180,1) 5.008073196986006%,rgba(229, 151, 64,1) 97.68837459634014%);
+  font-family: Roboto, Arial;
+}
+
+h1, form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container {
+  border-radius: 5px;
+}
+
+h1 {
+  background-color: #f2f2f2;
+  margin-top: 2%;
+  text-align: center;
+  font-family: 'Asap Condensed', Roboto, sans-serif;
+}
+
+form {
+  background-color: rgba(242, 242, 242, 0.4);
+}
+
+input[type=button] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 20px;
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  transform: translate(12.5%, 0%);
+  font-size: 200%;
+  font-family: 'Asap','Roboto Light', 'Roboto Thin', Roboto, Arial;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 2px;
+  font-family: 'Roboto Light', 'Roboto Thin', Roboto, Arial;
+
+}
+
+div {
+  margin: auto;
+  position: relative;
+  top: 20%;
+}
+
+img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+img:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0> -->
+    <link
+      rel="icon"
+      href="https://www.freefavicon.com/freefavicons/objects/upside-down-triangle-152-305121.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/addons/p5.dom.min.js"></script>
+    <script src="libraries/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Quicksort</h1>
+      <p>Visualization</p>
+    </header>
+
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            <label class="items">Number of Items:</label>
+            <input
+              type="number"
+              name="inputAmount"
+              id="input"
+              value="100"
+              oninput="editInput(this.value)"
+            />
+          </td>
+          <td>
+            <div class="check">
+              <label>
+                <input
+                  type="checkbox"
+                  name="auplay"
+                  id="auplay"
+                  value="AutoPlay"
+                  checked
+                  onchange="changeAutoPlay()"
+                />
+                AutoPlay
+              </label>
+            </div>
+            <div class="checkSounds">
+              <label>
+                <input
+                  type="checkbox"
+                  name="Sounds"
+                  id="checkSound"
+                  value="Sounds"
+                  checked
+                  onchange="changeSoundEffects()"
+                />
+                Sounds
+              </label>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label id="frame_label">
+              Speed: 30
+            </label>
+          </td>
+          <td>
+            <div class="slider">
+              <input
+                type="range"
+                name="slider"
+                id="slider"
+                class=""
+                min="1"
+                max="100"
+                value="50"
+                oninput="sliderChange(this.value)"
+              />
+              <label>
+                <input
+                  type="button"
+                  name="brand"
+                  class="reset"
+                  value="Reset"
+                  onclick="generateNumbers()"
+                />
+              </label>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <input
+      type="button"
+      class="menu"
+      value="back to menu"
+      onclick="window.location.href='../../index.html'"
+    />
+    <div class="information">
+      <table>
+        <tr>
+          <td><label id="tswaps">Total swaps: -</label></td>
+        </tr>
+        <tr>
+          <td><label id="tcomps">Total comparisons: -</label></td>
+        </tr>
+        <tr>
+          <td><label id="tarray">Total array accesses: -</label></td>
+        </tr>
+        <label id="loading"></label>
+      </table>
+    </div>
+  </body>
+</html>
